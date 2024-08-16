@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Modifique o programa para informar quantos anos falta para ela chegar a 100 anos. (Assumindo que ninguém digitará um valor inteiro maior que 100)
 int main() {
 	int age;
 	

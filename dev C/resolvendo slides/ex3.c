@@ -1,4 +1,5 @@
 #include <stdio.h>
+//olicite 3 números e apresente a média dos números armazenados. (By Ferlini)
 
  
 	int main() {

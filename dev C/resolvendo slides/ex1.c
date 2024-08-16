@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Escreva um programa na linguagem C que receba o nome e a idade de uma pessoa. Como saída, faça uma saudação a ela (pelo nome) informando a sua idade. (Nome é uma String e idade é um inteiro).
 int main () {
 	char name [40]; //definindo um array de caracteres com 40 posições
 	int age;

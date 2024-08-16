@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Fazer um programa em C que imprime a tabuada do número escolhido, considerando as multiplicações de 1 a 10.
 
 int main () { //daria pra fzer mt mais simples usando o laço for, mas como n aprendemos ainda, vo faze simples memo
 	int n1,res;
