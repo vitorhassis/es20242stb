@@ -1,0 +1,48 @@
+1- OPERADORES ARITMETICOS
+MULTIPLICACAO = * 
+DIVISAO = /
+ADIÇÃO = +
+SUBTRAÇÃO = -
+
+2- OPERADORES RELACIONAIS
+MAIOR= >
+MENOR= <
+MAIOR IGUAL= >=
+MENOR IGUAL= <-
+IGUAL= =
+E= &
+OU= ||
+NEGAÇÃO, DIFERENTE= !
+-se voce quer tirar a parte a unidade de milhar=(num/1000)%10; a centena=(num/100)%10; dezena=(num/10)%10; 
+unidade=num%10. Se ficar confuso, so fazer no papel e ver que faz sentido e funciona;
+
+CONCEITOS
+-identificador = nome de uma variavel que vai receber um valor/conteudo;
+-no tipo numerico, na duvide poe real (presença de casa decimal);
+-ENTRADA= tudo o que o usuario vai inserir no sistema;
+-SAIDA= o que sai do sistema e volta pro usuario;
+-return 0= como toda função vai retornar algo para o usuario, a função int main() nao eh diferente;
+-nome_rua e nomeRua sao formas de declarar uma variavel. A primeira, tambem chamada de snake_case, e a segunda chamada 
+de cameCase; 
+-\n= pular linha;
+-% = calcula o resto de alguma divisao, se for 0 eh porque o dividendo possui divisao exata pelo divisor, se for 1, 
+indica que o dividendo nao possui uma divisao exata pelo divisor;
+-x <- randi (10)= x vai receber um valor randomico, ou seja aleatorio, de 0 a 9;
+-r <- n%2= r vai receber o resto da divisao de n por 2;
+-%2.x(x<- f,d,s,etc) = duas casas decimais;
+-quando usamos 1 igual, ( = ) estamos atribuindo valor para algo. Quando usamdos 2 iguais ( == ) estamos fazendo uma 
+pergunta. Se algo eh igual a algo;
+ESTRUTURA
+-scanf("%x",&y); %x= formatando a variavel; &y= endereço da memoria;
+-
+
+
+IF ELSE
+-geralmente, usa dois sinais de igual dentro do parametro condicional. Ex: if (letra == 'A');
+-se for um codigo pequeno, de uma linha, nao precisa abrir e fechar chaves;
+-caso o parametro condicional seja uma letra, usa-se aspas simples. Ex: if (letra == 'Z'), se o parametro for um valor
+numerico, nao se utiliza aspas simples, coloca o valor direto. Ex: if (numero == 1);
+
+DICA GERAL
+-sempre qnd tiver alg ex envolvendo divisao de valores, se atentar que o divisor nunca deve ser 0;
+

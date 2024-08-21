@@ -1,0 +1,263 @@
+ESTRUTURAS DE CONTROLE
+1-sequencia = desde o ponto A ate o B executa tarefas sequencialmente, tipo o exemplo abaixo de comer a fatia de pizza;
+2-condição = teste logico com duas possibilidades (verdade ou falso), IF e ELSE, booleana;
+3-REPETICOES/LAÇOS =  faz um looping e testa a condicao varias vezes, testando-a enquanto ela se manter verdadeira;
+------------------------------------------------
+*WHILE = ENQUANTO*
+
+function comerpizza() {
+comerfatia()
+comerfatia() 
+comerfatia()
+comerfatia()        (1)
+comerfatia()
+comerfatia()
+comerfatia()
+}
+
+"enquanto algo for verdade" = while (condicao) e coloca um bloco - entre chaves - {
+
+
+} qnd ele executa esse bloco, ele volta e repete. caso ele deixe de ser verdadeiro, o fluxo é desviado pelo lado de fora;
+
+
+function comerpizza () {
+   while (temfatia() {             -ENQUANTO TER FATIA, ELE VAI REPETIR A AÇÃO OU SEJA, COMER A FATIA. NO MOMENTO EM QUE ACABAR AS FATIAS, ELE TERMINA A 
+       comerfatia()      (2)        FUNÇÃO DE COMER A PIZZA. NESSE CASO, INDEPENDE O TAMANHO DA PIZZA, SE FOREM 10 FATIAS, 50, 2000 FATIAS.. SEM PRECISAR   
+    }                               REPETINDO MIL VEZES A AÇÃO IGUAL NO EX DE CIMA. (primeiro testa, dps executa o bloco) - ESTRUTURA DE REPETICAO COM TESTE
+                                    LOGICO NO COMEÇO
+ 
+}
+
+------------------------------------------------
+
+*DO = FAÇA*
+
+ do {           -(aq ele primeiro executa o bloco, depois ele testa) - ESTRUTURA DE REPETICAO COM TESTE LOGICO NO FINAL
+
+
+}  while (condicao)
+
+------------------------------------------------
+ 
+*FOR*
+-vamos comparar como seria um "for" no codigo que usamos de exemplo o while:
+
+(WHILE) 
+var c=1
+  while (c<=10) {
+                        "ENQUANTO C FOR MENOR OU IGUAL A DEZ, PEGA C E SOMA MAIS UM, E ASSIM SUCESSIVAMENTE ATE CHEGAR NO LIMITE DA CONDICAO, DAI
+                         O FLUXO SAI"
+c++
+}
+
+-MESMO CODIGO E FUNCIONALIDADE, mas agora usando o codigo "for":
+ 
+(FOR) - o bom do for eh q vc cria tres "condicoes" ( x ; x ; x) { } e fica menos coisas dentro do objeto! Vale ressaltar que as "condicoes"/concomitancias
+será na mesma ordem do q vc faria usando WHILE ou DO. segue o exemplo - 
+
+for (  c=1; c<=10; c++) {
+
+                                -QUANDO TEMOS OS LIMITES DAS NOSSAS EXECUÇÕES, ESSA OPÇÃO DE FOR FICA MAIS INTERESSANTE E EFICAZ
+                          
+}
+
+
+
+var c = 1;
+while (c <= 5) {
+  console.log(c);
+  c++; (c = c+1 == c++)
+}
+
+ poderia fazer tbm com DO, e ficaria: 
+
+do {
+    console.log(c)
+    c++
+} while (c<=5)
+
+
+ poderia fazer tambem com FOR, e ficaria:
+for (c = 1; c <= 5; c++) {
+  console.log(c);
+} 
+
+------------------------------------------------
+-so relembrando as estruturas em C e em portugol, tem algumas diferencas;
+*IF ELSE*
+(C)
+if (condição) {
+    // Código a ser executado se a condição for verdadeira
+} else {
+    // Código a ser executado se a condição for falsa
+}
+
+
+(P)
+se (condição) então
+    // Código a ser executado se a condição for verdadeira
+senão
+    // Código a ser executado se a condição for falsa
+fimse
+------------------------------------------------
+*SWITCH*
+OBS:
+-Em ambos os casos, percebe que o `case` ou `caso` eh direto, sem precisar fazer comparacoes (por um 
+momento pensei que seria caso(num=1);
+-Nao tem break em portugol;
+-no portugol, nao usa : no caso;
+
+
+(C)
+switch (expressão) {
+    case valor1:
+        // Código a ser executado se expressão == valor1
+        break;
+    case valor2:
+        // Código a ser executado se expressão == valor2
+        break;
+    default:
+        // Código a ser executado se nenhum valor corresponder
+
+
+(P)
+escolha (expressão)
+    caso valor1:
+        // Código a ser executado se expressão == valor1
+    caso valor2:
+        // Código a ser executado se expressão == valor2
+    outrocaso:
+        // Código a ser executado se nenhum valor corresponder
+fimescolha
+
+
+(C)
+while (condição) {
+    // Código a ser executado enquanto a condição for verdadeira
+}
+
+
+(P)
+enquanto (condição) faça
+    // Código a ser executado enquanto a condição for verdadeira
+fimenquanto
+
+EXEMPLO DE SWITCH EM C E EM PORTUGOL: 
+
+(C)
+
+#include <stdio.h>
+
+int main() {
+    int opcao;
+
+    // Leitura da opção
+    printf("Digite um número de 1 a 12: ");
+    scanf("%d", &opcao);
+
+    // Estrutura switch
+    switch (opcao) {
+        case 1:
+            printf("Janeiro\n");
+            break;
+        case 2:
+            printf("Fevereiro\n");
+            break;
+        case 3:
+            printf("Março\n");
+            break;
+        case 4:
+            printf("Abril\n");
+            break;
+        case 5:
+            printf("Maio\n");
+            break;
+        case 6:
+            printf("Junho\n");
+            break;
+        case 7:
+            printf("Julho\n");
+            break;
+        case 8:
+            printf("Agosto\n");
+            break;
+        case 9:
+            printf("Setembro\n");
+            break;
+        case 10:
+            printf("Outubro\n");
+            break;
+        case 11:
+            printf("Novembro\n");
+            break;
+        case 12:
+            printf("Dezembro\n");
+            break;
+        default:
+            printf("Número inválido. Digite um número de 1 a 12.\n");
+            break;
+    }
+
+    return 0;
+}
+
+
+(P)
+
+algoritmo exemplo_meses
+    variavel opcao : inteiro
+
+    // Leitura da opção
+    escreva("Digite um número de 1 a 12: ")
+    leia(opcao)
+
+    // Estrutura switch
+    escolha opcao
+        caso 1
+            escreva("Janeiro")
+        caso 2
+            escreva("Fevereiro")
+        caso 3
+            escreva("Março")
+        caso 4:
+            escreva("Abril")
+        caso 5
+            escreva("Maio")
+        caso 6
+            escreva("Junho")
+        caso 7
+            escreva("Julho")
+        caso 8
+            escreva("Agosto")
+        caso 9
+            escreva("Setembro")
+        caso 10
+            escreva("Outubro")
+        caso 11
+            escreva("Novembro")
+        caso 12
+            escreva("Dezembro")
+        caso contrario
+            escreva("Número inválido. Digite um número de 1 a 12.")
+    fimescolha
+fimalgoritmo
+
+------------------------------------------------
+
+DEBUGGING - como conferir passo a passo a utilização/funcionalidade dessas estruturas de repetições acima:
+1- vai em "run" la em cima, e em "start debugging
+2- escolha um breakpoint, ou seja, da onde ele vai iniciar o debugging, e de um "run and debug".
+3- na aba "call stack", vc vai perceber uns botaos de continuar, parar, etc. o botaozin "step over" faz ele fazer executar apartir do breakpoint selecionado
+em vermelho. apartir disso, vc pode ir clicando Alt+f10 para ir dando continuidade, e ele vai executando de acordo com oq vc for dando alt+f10, na parte de
+debug console (f8). la, ele vai fazer jus a ideia de executar e repetir enquanto obedecer a condição proposta e, apartir do momento em que não for mais de
+acordo, o fluxo pula fora do objeto.
+
+
+
+
+
+
+
+
+
