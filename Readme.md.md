@@ -1,0 +1,2 @@
+-Material com resoluções dos slides e exercícios da matéria "LINGUAGEM E TÉCNICAS DE PROGRAMAÇÃO" da facul;
+-Estamos utilizando o dev-C++;
