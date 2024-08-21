@@ -19,9 +19,6 @@ int n1,n2;
 	
 //poderia ter feito diferente esse if e else envolvendo outras maneiras de montar esse parametro condicional
 
-
-
-
 	
 /*printf("Por favor, digite dois valores numericos que serao referentes ao dividendo e divisor, respectivamente. \n");	
 	scanf("%d %d",&n1,&n2);
