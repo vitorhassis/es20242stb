@@ -10,7 +10,7 @@ double porc (double x, double y);
 int main() {
 	double n1,n2;
 	char calc;
-	printf("Escolha uma operacao: \n+ adicao\n- subtracao\n* multiplicacao\n/ divisao\nM(media)\n^(elevado)NAO TA FUNCIONANDO\nP(porcentagem)\n");
+	printf("Escolha uma operacao: \n+ adicao\n- subtracao\n* multiplicacao\n/ divisao\nM(media)\n^(elevado)\nP(porcentagem)\n");
 	scanf("%c",&calc);
 	
 	printf("digite um valor: ");
@@ -70,6 +70,10 @@ double div (double x, double y) {
 }
 
 double elev (double x, double y) {
+	int xelev, yelev;
+	 xelev = x*x; //arrumei!
+	 yelev = y*y;
+	 return xelev+yelev;
 }
 
 double media (double x, double y) {

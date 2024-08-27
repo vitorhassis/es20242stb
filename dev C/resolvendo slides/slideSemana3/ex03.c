@@ -1,18 +1,18 @@
-//Escreva um algoritmo que leia um número real, n, e escreva “menor que 20”, “igual a 20” ou “maior que 20” se n < 20, n = 20 ou n > 20, respectivamente. 
-
 #include <stdio.h>
+//Escreva um algoritmo que leia um número inteiro positivo com três dígitos e escreva como saída “par” se o dígito da centena é par e “ímpar” caso contrário. (Se o número tiver mais que três dígitos ou menos, informe que só aceita valores com três dígitos.)
 
-int main () {
-	float num;
+int main() {
 	
-	
-	printf ("Por favor, digite um numero: ");
-	scanf("%f",&num);
-	
-	if (num==20) {
-		printf("O numero eh igual a 20");
-	} else if (num<20) {
-			printf ("O numero eh menor que 20");
-		}	else printf("o numero informado eh maior que 20");
-	}
+int n1,cent;
 
+printf ("Por favor, digite um valor de restritamente 3 digitos: \n");
+scanf("%d",&n1);	
+
+if (n1>99 && n1<1000) {
+cent= (n1/100)%10;
+	if (cent%2==0) {
+	printf("PAR\n");
+	} else printf ("IMPAR\n");	
+} else printf ("Atente-se ao limite estabelecido e tente novamente!");	
+	return 0;
+}

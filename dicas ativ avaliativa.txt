@@ -1,0 +1,15 @@
+-nao esquecer do & comercial;
+
+-if (n1%3 == 0 && n1%7 == 0) nao if (n1%3== 0) && (n1%7 == 0);
+
+se voce quer tirar a parte a unidade de milhar=(num/1000)%10; a centena=(num/100)%10; dezena=(num/10)%10; unidade=num%10. Se ficar confuso, so fazer no papel e ver 
+que faz sentido e funciona. Tem q declarar a variavel relacionada ao qual parte do numero vc quer retirar!;
+
+-C EH CASE SENSITIVE!!! CERTIFIQUE-SE QUE TODOS OS ; ESTAO CORRETOS E PRESENTES!!!!;
+
+-//if (n1^2==n2^2+n3^2 || n2^2==n1^2+n3^2 || n3^2==n1^2+n2^2) { eu fiz assim, mas nao tem nessa biblioteca o ^=elevado. Ent vamos usar um macete para resolver isso:
+vamos adaptar. Vamos criar outras 3 variaveis chamadas de n1elev, n2elev, n3elev. Em seguida: n1elev= n1*n1 / n2elev= n2*n2 / n3elev= n3*n3. Com isso, dentro do
+if, vamos entao adaptar a comparação assim: if (n1elev==n2elev+n3elev || n2elev==n1elev+n3elev || n3elev==n1elev+n2elev) PRONTO!;
+
+-Usar sempre dois iguais dentro da estrutura condicional do if!!!!!, ate porque 2 iguais indica uma pergunta, "isso eh isso?" quando usamos so um igual, estamos
+fazendo atribuicao a uma variavel. Por isso por ex, no topico acima, quando declaramos aquela conta a n1elev por exemplo, usamos apenas um sinal de igual;
