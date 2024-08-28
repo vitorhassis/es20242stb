@@ -41,7 +41,7 @@ int main() {
 		break;
 		
 		case '^':
-			printf("n1 elevado a n2 e = %2.f", elev(n1,n2));
+			printf("NAO FUNCIONA", elev(n1,n2));
 		break;
 		case 'P':
 			printf("porcentagem e = %2.f", porc(n1,n2));
@@ -70,10 +70,6 @@ double div (double x, double y) {
 }
 
 double elev (double x, double y) {
-	int xelev, yelev;
-	 xelev = x*x; //arrumei!
-	 yelev = y*y;
-	 return xelev+yelev;
 }
 
 double media (double x, double y) {
