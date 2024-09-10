@@ -1,0 +1,28 @@
+EX NORMAIS
+-o lance do ex q vc precisava tirar a parte inteira da fracionada. vc faz tipo parteinteira = (int)string. dps faz partedecimal=parteInteira - string;
+
+-outro foi, de concatenar nome e sobrenome. unica diferenca eh q vc define char nome e sobrenome [40] e dps concatena eles usando %s %s", nome, sobrenome);
+
+-ex q tem q fazer maior e menor, depende mas geralmente vc pega o primeiro valor e atribui ele a maior. Dps vc vai comparando os demais se eh maior que o maior.
+Tbm tem ex q eh bom vc criar uma variavel menor. enfim, depende bastante;
+
+
+FUNCAO
+-nao esquecer q eh if(x==1) nao if(x=1);
+-funcao n tem segredo. tanto em cima quanto em fora do main oq vc por dentro do parametro eh literalmente parametro apenas, pode ter qualquer nome. Embaixo do main
+voce coloca oq ela vai fazer. dentro dessa funcao vc pode criar variaveis que serao utilizadas/usadas para analise, comparacao apenas DENTRO DA FUNCAO, nao cria
+ela por exemplo no main. Cada funcao tem suas variaveis locais;
+
+-pra vc chamar a funcao, vc tem q criar uma variavel e igualar a funcao, onde agora, no seu parametro ira os ARGUMENTOS, ou seja, agora sim vai as variaveis que 
+serao coletadas do usuario. Ex= nummaior = retornemaior(num1,num2);	
+
+-dependendo do caso, tem ex q o return e so no final, tem ex q por ex se x%2==0 return 1 se x%2==1 return 0. Tem exercicio por ex aquele da funcao ver qm eh maior,
+so vai ter um return maior no final. Ent tem q entender bem, mas no enunciado ja da pra entender se o return vai ser so um, ou em cada condicao por exemplo;
+
+-qnd ta dando um erro e vc n fica vermelho, vc n sabe onde ta o erro, fazer as seguintes vericaçóes:
+1-verificar se vc n colocou um & comercial em algum lugar q n tem q estar;
+2-ponto e virgula;
+3-erro na declaracao da variavel;
+4-nao inicializou a variavel;
+5-esqueceu aspas, ou o &comercial na hr de guardar a variavel;
+6-int = %d, float(real) = %f, char = %s nao %c!;
