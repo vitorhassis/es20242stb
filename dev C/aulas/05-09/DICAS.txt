@@ -7,6 +7,8 @@ EX NORMAIS
 Tbm tem ex q eh bom vc criar uma variavel menor. enfim, depende bastante;
 
 
+
+
 FUNCAO
 -nao esquecer q eh if(x==1) nao if(x=1);
 -funcao n tem segredo. tanto em cima quanto em fora do main oq vc por dentro do parametro eh literalmente parametro apenas, pode ter qualquer nome. Embaixo do main

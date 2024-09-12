@@ -29,7 +29,7 @@ de cameCase;
 indica que o dividendo nao possui uma divisao exata pelo divisor;
 -x <- randi (10)= x vai receber um valor randomico, ou seja aleatorio, de 0 a 9;
 -r <- n%2= r vai receber o resto da divisao de n por 2;
--%2.x(x<- f,d,s,etc) = duas casas decimais;
+-%.2x(x<- f,d,s,etc) = duas casas decimais;
 -quando usamos 1 igual, ( = ) estamos atribuindo valor para algo. Quando usamdos 2 iguais ( == ) estamos fazendo uma 
 pergunta. Se algo eh igual a algo;
 ESTRUTURA
