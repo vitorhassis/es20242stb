@@ -15,16 +15,13 @@ scanf("%f",&emp);
 printf("digite o numero de parcelas: ");
 scanf("%d",&parc);
 
-printf("juros e de 0.5 (por cento) mensais.\n");
+printf("juros e de 5 (por cento) mensais.\n");
 
 result = (emp/parc);
-result += result*0.005;
+result += result*0.05;
 
 printf("ficaram %d parcelas de %.2f mensais",parc,result);
 
 	
 	return 0;
 }
-
-
-

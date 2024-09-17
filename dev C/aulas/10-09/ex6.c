@@ -28,4 +28,3 @@ if (camiseta==5 && tenis==0) {
 	
 	return 0;
 }
-
