@@ -6,7 +6,7 @@ int main () {
 	
 	
 int parc;
-float emp,result;
+float emp,mensal,result;
 result = 0;
 
 printf("digite o valor do emprestimo: ");
@@ -17,10 +17,10 @@ scanf("%d",&parc);
 
 printf("juros e de 5 (por cento) mensais.\n");
 
-result = (emp/parc);
-result += result*0.05;
+mensal = (emp/parc);
+result = mensal*0.05;
 
-printf("ficaram %d parcelas de %.2f mensais",parc,result);
+printf("ficaram %d parcelas de %.2f mensais",parc,mensal);
 
 	
 	return 0;
